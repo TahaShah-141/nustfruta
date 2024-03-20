@@ -19,25 +19,7 @@ import { useRouter } from "next/navigation";
 // import { TimePicker, get12HourTime } from "@/components/custom/timePicker";
 import { Textarea } from "@/components/ui/textarea";
 import { Loading } from "@/components/custom/loading";
-
-export const hostelNames = [
-  "Ammar", 
-  "Amna", 
-  "Attar", 
-  "Ayesha", 
-  "Beruni", 
-  "Fatima",
-  "Ghazali", 
-  "Hajveri", 
-  "Johar", 
-  "Khadija", 
-  "Liaquat", 
-  "Razi", 
-  "Rehmat", 
-  "Rumi", 
-  "Zakiriya", 
-  "Zainab", 
-]
+import { hostelNames } from "@/lib/hostelNames";
 
 type BillItem = StockType & {quantity: number}
 
