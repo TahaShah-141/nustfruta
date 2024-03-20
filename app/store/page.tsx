@@ -38,7 +38,7 @@ import { Toaster } from '@/components/ui/toaster'
 import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { DatePicker } from '@/components/custom/datePicker'
-import { hostelNames } from '../new/page'
+import { hostelNames } from '@/lib/hostelNames'
 
 type StockDislayType = {
   name: string
