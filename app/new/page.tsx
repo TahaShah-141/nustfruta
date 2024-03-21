@@ -176,7 +176,7 @@ export default function NewOrder() {
       <div className="flex xl:flex-row flex-col gap-4">
         <div className="flex-[3_0_0]">
 
-        <ScrollArea className="h-[50vh] md:h-[69vh] w-full">
+        <ScrollArea className="h-[50vh] md:h-[63.5vh] w-full">
         {stock ? <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-2 min-[1450px]:grid-cols-3 sm:gap-3 gap-2">
             {stock.map((item) => 
               <Card className="flex sm:flex-col sm:justify-between items-center gap-3 sm:gap-2 p-3" key={item.name}>
@@ -196,7 +196,7 @@ export default function NewOrder() {
         <div className="flex-[2_0_0] flex flex-col gap-2">
           <div className="flex flex-1 flex-col gap-4">
             <h2 className="text-2xl font-semibold text-center">Order Summary</h2>
-            <ScrollArea className="h-[48vh]">
+            <ScrollArea className="h-[42vh]">
               <div className="flex flex-col gap-2 ">
                 {Object.keys(bill).map(itemName => (bill[itemName].quantity > 0 && <BillCard key={itemName} {...bill[itemName]} />))}
               </div>

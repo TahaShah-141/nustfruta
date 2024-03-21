@@ -63,7 +63,7 @@ export const Navbar = () => {
         </div>
         <div className="xs:flex flex-1 hidden items-center justify-end space-x-2">
           <nav className="flex items-center">
-            <a
+            {/* <a
               target="_blank"
               rel="noreferrer"
               href="https://github.com/TahaShah141"
@@ -72,7 +72,7 @@ export const Navbar = () => {
                 <GitHubLogoIcon className="h-4 w-4"/>
                 <span className="sr-only">GitHub</span>
               </div>
-            </a>
+            </a> */}
             <a
               target="_blank"
               rel="noreferrer"

@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/themeProvider";
 import { Navbar } from "@/components/custom/navbar";
 import StoreProvider from "@/components/storeProvider";
+import { Footer } from "../components/custom/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
             <main className={`flex sm:flex-col justify-center sm:items-center`}>
               {children}
             </main>
+            <Footer />
           </ThemeProvider>
         </StoreProvider>
       </body>
