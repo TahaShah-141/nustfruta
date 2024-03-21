@@ -39,6 +39,7 @@ import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { DatePicker } from '@/components/custom/datePicker'
 import { hostelNames } from '@/lib/hostelNames'
+import { ScrollArea } from '@/components/ui/scroll-area'
 
 type StockDislayType = {
   name: string
@@ -371,7 +372,7 @@ const Orders = () => {
   }, [])
 
   return (
-    <>
+    <ScrollArea className='h-[85vh] w-full'>
     {loading ? <Loading /> : <Tabs defaultValue="pending" className="flex flex-col w-full p-4 gap-2">
       <TabsList className="grid self-center w-11/12 sm:w-1/2 grid-cols-3">
         <TabsTrigger value="pending">Pending</TabsTrigger>
@@ -391,7 +392,7 @@ const Orders = () => {
         <Toaster />
       </TabsContent>
     </Tabs>}
-    </>
+    </ScrollArea>
   )
 }
 

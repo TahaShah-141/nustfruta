@@ -117,7 +117,7 @@ export default function NewOrder() {
   }
 
   return (  
-    <Card className="flex flex-col p-2 h-fit gap-2 w-11/12 sm:w-4/5 sm:p-6 sm:gap-4">
+    <Card className="flex flex-col p-2 h-fit gap-2 w-11/12 sm:w-4/5 sm:p-5 sm:gap-4">
       <Dialog open={showPaymentDialog} onOpenChange={setShowPaymentDialog}>
         <DialogContent className="max-w-[90vw] xs:max-w-sm md:max-w-md rounded-md">
           <DialogHeader>
