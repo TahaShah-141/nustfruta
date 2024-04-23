@@ -27,7 +27,7 @@ export default function RootLayout({
             <main className={`flex sm:flex-col justify-center sm:items-center`}>
               {children}
             </main>
-            <Footer />
+            {/* <Footer /> */}
           </ThemeProvider>
         </StoreProvider>
       </body>
